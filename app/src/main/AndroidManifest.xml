@@ -4,24 +4,34 @@
 
     <application
         android:allowBackup="true"
-        android:supportsRtl="true"
-        android:label="@string/app_name"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
         tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+
+            android:theme="@style/Theme.FuckIFlyTekT10LearningMachine">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <meta-data
             android:name="xposedmodule"
-            android:value="true"/>
+            android:value="true" />
         <meta-data
             android:name="xposeddescription"
             android:value="@string/xposed_description" />
         <meta-data
             android:name="xposedminversion"
-            android:value="54"/>
-        <!-- 模块作用域 -->
+            android:value="54" /> <!-- 模块作用域 -->
         <meta-data
             android:name="xposedscope"
-            android:resource="@array/xposedscope"/>
+            android:resource="@array/xposedscope" />
     </application>
 
 </manifest>

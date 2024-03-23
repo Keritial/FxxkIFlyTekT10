@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">去你的科大讯飞 AI 学习机 by Keritial</string>
     <string name="xposed_description">恢复包管理安装程序正常的行为。</string>
+    <string name="_loaded_toast">已绕过安装限制。</string>
+    <string name="restart_systemui">重启系统界面</string>
 </resources>
